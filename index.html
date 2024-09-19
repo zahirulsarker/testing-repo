@@ -2,13 +2,39 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=hh, initial-scale=1.0">
-  <title>Document</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payoo Mobile Bank</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <h1>Tesing repo</h1>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore iure suscipit necessitatibus unde, laudantium eum, ea voluptatem quibusdam quos aliquid blanditiis repellendus dolores incidunt deleniti placeat quas ratione voluptates libero.
+  <div class="app-container">
+    <!-- Login Section -->
+    <div id="login-section">
+      <h2>Login to Payoo</h2>
+      <input type="text" id="username" placeholder="Enter username">
+      <input type="password" id="password" placeholder="Enter password">
+      <button id="login-btn">Login</button>
+    </div>
 
-  </p>
+    <!-- Dashboard Section (hidden initially) -->
+    <div id="dashboard-section" style="display:none;">
+      <h2>Welcome, <span id="user-name"></span>!</h2>
+      <div class="balance">
+        <h3>Your Balance: <span id="balance">$0.00</span></h3>
+      </div>
+
+      <!-- Transfer Section -->
+      <div class="transfer">
+        <h3>Transfer Funds</h3>
+        <input type="number" id="transfer-amount" placeholder="Amount to transfer">
+        <button id="transfer-btn">Transfer</button>
+      </div>
+<br>
+      <!-- Logout Button -->
+      <button id="logout-btn">Logout</button>
+    </div>
+  </div>
+
+  <script src="./app.js"></script>
 </body>
 </html>
